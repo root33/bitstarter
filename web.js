@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
-  var fileName = "/home/ubuntu/index.html";
+  var fileName = "index.html";
   var fs  = require('fs');
   var buf = fs.readFileSync(fileName);
   response.send(buf.toString());
